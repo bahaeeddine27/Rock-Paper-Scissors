@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+body{
+    font-family: Montserrat;
+    text-align: center;
+}
+button, .computer-choice{
+    background-color: #6DB9EF;
+    border: 0;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+svg{
+    height: 40px;
+    width: 40px;
+    fill: #fff;
+    cursor: pointer;
+}
+.computer-choice svg{
+    display: none;
+}
+.result{
+    margin-top: 20px;
+}
+@keyframes spin{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.computer-choice{
+    animation: spin 1s infinite linear;
+}
+.computer-choice.stop-spinning{
+    animation: none;
+}
